@@ -36,11 +36,12 @@ function createCalendar(year,month){
     }
 
     for (let day=1;day<=daysInMonth;day++){
-        calendarHTML+= "<div class = 'day'> ${day}</div>";
+        calendarHTML+= `<div class="day">${day}</div>`;
+       
     }
 
     calendarContainer.innerHTML = calendarHTML;
-
+   
 }
 
 const currentDate = new Date();
