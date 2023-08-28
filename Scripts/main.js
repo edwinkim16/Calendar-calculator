@@ -24,6 +24,25 @@ function divide(){
 
 // Calendar code 
 
+function validate(){
+    var num1=document.getElementById("num1").value;
+    var num2=document.getElementById("num2").value;
+    
+
+    if(num1==''){
+        alert('enter num1');
+        num1.focus();
+        return false;
+        
+    }else if(num2=='') {
+        alert('enter num2');
+        num2.focus();
+        return false
+    }else
+    return false
+   
+}
+
 const calendarContainer = document.getElementById("calendar");
 function createCalendar(year,month){
     const daysInMonth = new Date (year, month + 1,0).getDate();
